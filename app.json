@@ -1,9 +1,12 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/index/index",
     "pages/setting/setting",
-    "pages/health/health"
+    "pages/health/health",
+    "pages/user/user",
+    "pages/home/high/index",
+    "pages/home/cure/index",
+    "pages/home/low/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -37,7 +40,7 @@
         "selectedIconPath": "/images/tabbar/component_cur.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/user/user",
         "text": "个人",
         "iconPath": "/images/tabbar/about.png",
         "selectedIconPath": "/images/tabbar/about_cur.png"

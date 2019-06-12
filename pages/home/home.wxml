@@ -41,7 +41,7 @@
     <view class="flex margin-left-sm justify-between align-center">
       <view class="margin-bottom radius "><view class="list_time">2019-05-21 12:00:00</view></view>
       <view class="margin-bottom radius margin-right-lg">
-      <button class="cu-btn bg-blue sm">
+      <button class="cu-btn bg-blue sm" bindtap="highsetting">
       <text class="user-motto" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;处理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </text>
       </button>

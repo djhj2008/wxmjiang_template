@@ -72,6 +72,12 @@ Page({
     });
   },
 
+  highsetting: function(){
+    wx.navigateTo({
+      url: '/pages/home/high/index',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
