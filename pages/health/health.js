@@ -2,8 +2,8 @@ import * as echarts from '../../ec-canvas/echarts';
 
 const app = getApp();
 
-function initChart(canvas, width, height) {
-  const chart = echarts.init(canvas, null, {
+function initChart(canvas, width, height,num,days) {
+  const chart = echarts.init(canvas, "macarons", {
     width: width,
     height: height
   });
@@ -23,7 +23,7 @@ function initChart(canvas, width, height) {
       data: ['体温']
     },
     toolbox: {
-      show: true,
+      show: false,
       feature: {
         dataView: { readOnly: false },
         magicType: { type: ['line', 'bar'] },
@@ -33,7 +33,7 @@ function initChart(canvas, width, height) {
     xAxis: {
       type: 'category',
       boundaryGap: false,
-      data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+      data: days,
     },
     dataZoom: [{
       type: 'inside',
@@ -64,7 +64,7 @@ function initChart(canvas, width, height) {
       {
         name: '体温',
         type: 'line',
-        data: [37, 38, 39, 38, 38, 38, 37],
+        data: num,
         markPoint: {
           data: [
             { type: 'max', name: '最大值' },
@@ -92,30 +92,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-    ec: {
-      onInit: initChart
-    }
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    that.setData({
+      ec: {
+        days: ['04-01 12:00', '04-01 13:00', '04-01 14:00', '04-01 15:00', '04-01 16:00', '04-01 17:00', '04-01 18:00',],
+        num: [41, 38, 39, 38, 38, 38, 37],
+        onInit: initChart
+      }
+    });
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**

@@ -22,35 +22,91 @@
 </scroll-view>
 
 <view class="weui-tab__content" hidden="{{TabCur != 0}}">
-<scroll-view class="scrollView" style='height: {{scrollViewHeight + "px"}}' scroll-y="true">
-
-<block  wx:for='{{12}}' wx:key='scroll' wx:for-index='idx'  wx:for-item='item'>
-<view class="itemView">
-    <view class="flex  margin-left-sm align-center justify-between">
-      <view class="flex-sub margin-top-xs margin-left-xs radius"><view class="list_sn">SN:0054</view></view>
-      <view class="flex-sub margin-top-xs radius"><view class="list_sn">ID:90</view></view>
-      <view class="flex-sub margin-top-xs radius"><view class="batteryfull"></view></view>
-    </view>
-    <view class="flex margin-left-sm align-center">
-      <view class="flex-sub  radius"><button class="cu-btn bg-orange lg">39.71</button></view>
-      <view class="flex-twice  radius"><view class="list_days">异常:1天</view></view>
-    </view>
-    <view class="flex margin-lr-sm margin-tb-sm">
-    <view class="divLinesub"></view>
-    </view>
-    <view class="flex margin-left-sm justify-between align-center">
-      <view class="margin-bottom radius "><view class="list_time">2019-05-21 12:00:00</view></view>
-      <view class="margin-bottom radius margin-right-lg">
-      <button class="cu-btn bg-blue sm" bindtap="highsetting">
-      <text class="user-motto" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;处理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </text>
-      </button>
+  <scroll-view class="scrollView" style='height: {{scrollViewHeight + "px"}}' scroll-y="true">
+    <block  wx:for='{{12}}' wx:key='scroll' wx:for-index='idx'  wx:for-item='item'>
+      <view class="itemView">
+          <view class="flex  margin-left-sm align-center justify-between">
+            <view class="flex-sub margin-top-xs margin-left-xs radius"><view class="list_sn">SN:0054</view></view>
+            <view class="flex-sub margin-top-xs radius"><view class="list_sn">ID:90</view></view>
+            <view class="flex-sub margin-top-xs radius"><view class="batteryfull"></view></view>
+          </view>
+          <view class="flex margin-left-sm align-center">
+            <view class="flex-sub  radius"><button class="cu-btn bg-orange lg">39.71</button></view>
+            <view class="flex-twice  radius"><view class="list_days">异常:1天</view></view>
+          </view>
+          <view class="flex margin-lr-sm margin-tb-sm">
+          <view class="divLinesub"></view>
+          </view>
+          <view class="flex margin-left-sm justify-between align-center">
+            <view class="margin-bottom radius "><view class="list_time">2019-05-21 12:00:00</view></view>
+            <view class="margin-bottom radius margin-right-lg">
+            <button class="cu-btn bg-blue sm" bindtap="highsetting">
+            <text class="user-motto" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;处理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </text>
+            </button>
+            </view>
+          </view>
       </view>
-    </view>
+    </block>
+  </scroll-view>
 </view>
-</block>
-
-</scroll-view>
+<view class="weui-tab__content" hidden="{{TabCur != 1}}">  
+  <scroll-view class="scrollView" style='height: {{scrollViewHeight + "px"}}' scroll-y="true">
+    <block  wx:for='{{12}}' wx:key='scroll' wx:for-index='idx'  wx:for-item='item'>
+      <view class="itemView">
+          <view class="flex  margin-left-sm align-center justify-between">
+            <view class="flex-sub margin-top-xs margin-left-xs radius"><view class="list_sn">SN:0054</view></view>
+            <view class="flex-sub margin-top-xs radius"><view class="list_sn">ID:90</view></view>
+            <view class="flex-sub margin-top-xs radius"><view class="batteryfull"></view></view>
+          </view>
+          <view class="flex margin-left-sm align-center">
+            <view class="flex-sub  radius"><button class="cu-btn bg-green lg">39.71</button></view>
+            <view class="flex-twice  radius"><view class="list_days">异常:1天</view></view>
+          </view>
+          <view class="flex margin-lr-sm margin-tb-sm">
+          <view class="divLinesub"></view>
+          </view>
+          <view class="flex margin-left-sm justify-between align-center">
+            <view class="margin-bottom radius "><view class="list_time">2019-05-21 12:00:00</view></view>
+            <view class="margin-bottom radius margin-right-lg">
+            <button class="cu-btn bg-blue sm" bindtap="highsetting">
+            <text class="user-motto" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;处理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </text>
+            </button>
+            </view>
+          </view>
+      </view>
+    </block>
+  </scroll-view>
 </view>
+<view class="weui-tab__content" hidden="{{TabCur != 2}}">
+  <scroll-view class="scrollView" style='height: {{scrollViewHeight + "px"}}' scroll-y="true">
+    <block  wx:for='{{12}}' wx:key='scroll' wx:for-index='idx'  wx:for-item='item'>
+      <view class="itemView">
+          <view class="flex  margin-left-sm align-center justify-between">
+            <view class="flex-sub margin-top-xs margin-left-xs radius"><view class="list_sn">SN:0054</view></view>
+            <view class="flex-sub margin-top-xs radius"><view class="list_sn">ID:90</view></view>
+            <view class="flex-sub margin-top-xs radius"><view class="batteryfull"></view></view>
+          </view>
+          <view class="flex margin-left-sm align-center">
+            <view class="flex-sub  radius"><button class="cu-btn bg-grey lg">39.71</button></view>
+            <view class="flex-twice  radius"><view class="list_days">异常:1天</view></view>
+          </view>
+          <view class="flex margin-lr-sm margin-tb-sm">
+          <view class="divLinesub"></view>
+          </view>
+          <view class="flex margin-left-sm justify-between align-center">
+            <view class="margin-bottom radius "><view class="list_time">2019-05-21 12:00:00</view></view>
+            <view class="margin-bottom radius margin-right-lg">
+            <button class="cu-btn bg-blue sm" bindtap="highsetting">
+            <text class="user-motto" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;处理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </text>
+            </button>
+            </view>
+          </view>
+      </view>
+    </block>
+  </scroll-view>
 </view>
+</view> 
 </view>

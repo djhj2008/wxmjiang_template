@@ -21,7 +21,7 @@
   </view>
 </view>
 	<view class="cu-form-group solid-bottom">
-		<textarea maxlength="-1" bindinput="textareaAInput" placeholder="请输入."></textarea>
+		<textarea maxlength="-1" bindinput="textareaAInput" placeholder="请输入"></textarea>
 	</view>
   <view class="padding flex flex-direction">
   <button class="cu-btn bg-blue" bindtap="highsetting">提交
@@ -29,4 +29,20 @@
   </view>
   <view class="itemView">
 </view>
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>处理记录
   </view>
+</view>
+<block  wx:for='{{12}}' wx:key='scroll' wx:for-index='idx'  wx:for-item='item'>
+<view class="itemView">
+    <view class="flex margin-left-sm align-center">
+      <view class="flex-sub  radius"><button class="cu-btn bg-orange lg">39.71</button></view>
+      <view class="flex-twice  radius"><view class="list_days">病情描述</view></view>
+    </view>
+    <view class="flex margin-lr-sm margin-tb-sm">
+    <view class="divLinesub"></view>
+    </view>
+</view>
+</block>
+</view>

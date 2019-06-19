@@ -1,4 +1,5 @@
 import WxCanvas from './wx-canvas';
+import * as macarons from './macarons';
 import * as echarts from './echarts';
 
 let ctx;
@@ -57,9 +58,13 @@ Component({
           this.chart = callback(canvas, res.width, res.height);
         }
         else if (this.data.ec && typeof this.data.ec.onInit === 'function') {
-          this.chart = this.data.ec.onInit(canvas, res.width, res.height);
+          console.log(this);
+          var days = this.data.ec.days;
+          var num = this.data.ec.num;
+          this.chart = this.data.ec.onInit(canvas, res.width, res.height, num, days);
         }
         else {
+          console.log('test1');
           this.triggerEvent('init', {
             canvas: canvas,
             width: res.width,
